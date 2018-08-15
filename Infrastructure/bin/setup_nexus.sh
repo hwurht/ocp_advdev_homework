@@ -29,3 +29,4 @@ echo "Setting up Nexus in project $GUID-nexus"
 # oc new-app -f ../templates/nexus.yaml --param .....
 
 # To be Implemented by Student
+oc new-app -f ../templates/nexus.yaml --param SERVICE_NAME=nexus3 --param NEXUS_VERSION=latest --param VOLUME_CAPACITY=4Gi --param MAX_MEMORY=2Gi -n $GUID-nexus
